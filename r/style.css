@@ -1,0 +1,106 @@
+* { margin:0; padding:0; font-family:inherit; }
+body {
+  background: #fff;
+  color: #22222f;
+  font-family: 'Inter UI', -system-ui, system-ui, sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.001em;
+  margin-bottom: 4em;
+
+  width: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+
+  text-rendering: optimizeLegibility;
+  text-rendering: geometricPrecision;
+  -moz-font-feature-settings:"kern" 1, "liga" 1; 
+  -ms-font-feature-settings:"kern" 1, "liga" 1; 
+  -o-font-feature-settings:"kern" 1, "liga" 1; 
+  -webkit-font-feature-settings:"kern" 1, "liga" 1; 
+  font-feature-settings:"kern" 1, "liga" 1;
+}
+
+div.breaker { clear:both; }
+
+p, ul, ol, pre, blockquote, hr, object { margin: 1em 0; }
+ul, ol { margin-left:1.1em; }
+pre, code, tt {
+  font-family: Inconsolata, 
+    "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size:1.03em;
+  letter-spacing: 0.01em;
+}
+img { display: block; border: none; vertical-align: bottom; }
+hr { height:1px; border:none; background-color:#ddd; }
+strong, b { font-weight: 600; letter-spacing:0.01em; }
+num { /* number */
+  font-feature-settings: 'calt' 1, 'ss01' 1;
+  white-space: pre;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 1.414em 0 0.5em;
+}
+h1 {
+  text-indent: -0.01em;
+  margin-bottom: 0;
+  margin-top: 0;
+  color:#222;
+}
+h2 {
+  /*font-weight: 500;*/
+  margin-top: 2em;
+}
+h3 {
+  margin-top: 2em;
+}
+h2 + h3, h3 + h4, h4 + h5 { margin-top:1em; }
+.anchor { cursor:pointer; }
+.anchor:hover { color: rgb(0,100,255); }
+
+/* type scale */
+h1 { font-size: 2.2em;  font-weight: 600; letter-spacing: -0.01em; }
+h2 { font-size: 1.4em;  font-weight: 600; letter-spacing: -0.01em; }
+h3 { font-size: 1.2em;  font-weight: 600; }
+h4 { font-size: 1.05em; font-weight: 600; }
+small { font-size: 0.833em; letter-spacing: 0.01em; }
+
+h1 > a, h2 > a, h3 > a, h4 > a {
+  color: inherit;
+  text-decoration: none;
+  text-shadow: none;
+  background: none !important;
+}
+
+a {
+  color: #375EAB;
+  text-decoration: inherit;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+a:hover {
+  color: #06F;
+  text-decoration: underline;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+}
+  section > * {
+    max-width: 800px;
+    margin:0 20px;
+    flex: 1 1 100%;
+    overflow: hidden; /* required for correct flex constraints */
+  }
+  section > * > h2:first-child { margin-top:0; }
+
+canvas {
+  width: 100%;
+  height: 100%;
+}
